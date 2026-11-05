@@ -15,6 +15,8 @@ public class main {
     }
 
     private static void task3() {
+        IO.println("автобусная экскурсия задача №233");
+        IO.println("================================");
         int kolBridge = Integer.parseInt(IO.readln("введите количество мостов "));
         int i=0;
         boolean accident =false;
@@ -32,6 +34,8 @@ public class main {
     }
 
     private static void task1 () {
+        IO.println("3 числа - разность двух чисел");
+        IO.println("================================");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите 3 числа. Первое число : ");
         int numb1 = scanner.nextInt();
@@ -47,6 +51,8 @@ public class main {
         IO.println(numb3+" - "+ numb2+ " = " + (numb3-numb2));
     }
     private static void task2() {
+        IO.println("два бандита задача №33");
+        IO.println("================================");
         int kolGarry = Integer.parseInt(IO.readln("введите количество простреленных банок Гарри "));
         int kolLarry = Integer.parseInt(IO.readln("введите количество простреленных банок Ларри "));
         int allKol = kolGarry + kolLarry -1 ;
