@@ -9,7 +9,32 @@ public class main {
         //task1(); // 3 числа - разность двух чисел
         //task2(); // два бандита задача №33
         //task3(); // автобусная экскурсия задача №233
-        task4(); // болты и гайки задача №294
+        //task4(); // болты и гайки задача №294
+        task5(); // цветочки №504
+    }
+
+    private static void task5() {
+        IO.println("================================");
+        IO.println("цветочки №504");
+        IO.println("================================");
+        int kolDay = 0;
+        while ( kolDay < 1 || kolDay > 1000  )  {
+            kolDay = Integer.parseInt(IO.readln("введите количество дней вытирания окошка. максимально 1000 "));
+            if ( kolDay < 1 || kolDay > 1000  ) {
+                IO.println("Неправильное значение!");
+            }
+        }
+        switch (kolDay % 3) {  // Каждую третью ночь комбинация горшков повторяется. Рассматриваем только 3 ночи.
+            case 0: // третья ночь
+                IO.println("GCV");
+                break;
+            case 1: // первая ночь
+                IO.println("VGC");
+                break;
+            case 2: // вторая ночь
+                IO.println("CVG");
+                break;
+        }
     }
 
     private static void task4() {
