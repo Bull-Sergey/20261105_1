@@ -12,9 +12,14 @@ public class main {
     }
 
     private static void task4() {
+        IO.println("================================");
+        IO.println("болты и гайки задача №294");
+        IO.println("================================");
+
     }
 
     private static void task3() {
+        IO.println("================================");
         IO.println("автобусная экскурсия задача №233");
         IO.println("================================");
         int kolBridge = Integer.parseInt(IO.readln("введите количество мостов "));
@@ -34,6 +39,7 @@ public class main {
     }
 
     private static void task1 () {
+        IO.println("================================");
         IO.println("3 числа - разность двух чисел");
         IO.println("================================");
         Scanner scanner = new Scanner(System.in);
@@ -51,6 +57,7 @@ public class main {
         IO.println(numb3+" - "+ numb2+ " = " + (numb3-numb2));
     }
     private static void task2() {
+        IO.println("================================");
         IO.println("два бандита задача №33");
         IO.println("================================");
         int kolGarry = Integer.parseInt(IO.readln("введите количество простреленных банок Гарри "));
