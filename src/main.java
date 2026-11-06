@@ -10,7 +10,49 @@ public class main {
         //task2(); // два бандита задача №33
         //task3(); // автобусная экскурсия задача №233
         //task4(); // болты и гайки задача №294
-        task5(); // цветочки №504
+        // task5(); // цветочки №504
+        // howMuch(); // сколько стоит ?
+        sumIs42();// вводить пока сумма не больше 42
+    }
+
+    private static void sumIs42() {
+        int sumAll = 0, negative = 0, kolNumber = 0;
+        double kolNegative = 0;
+        while (sumAll < 42) {
+            int numb = Integer.parseInt(IO.readln("Введите число "));
+            sumAll+=numb ; // общая сумма
+            kolNumber+=1; // количество чисел общее
+            if (numb < 0) {
+                kolNegative+=1; // количество отрицательных
+                negative+=numb; // отрицательная сумма
+            }
+        }
+        double result = ((kolNumber - kolNegative) / kolNumber) *100 ;
+        IO.println("Введено чисел " + kolNumber );
+        IO.println("% положительных чисел " + (int) result );
+        IO.println("Сумма отрицательных " + negative );
+    }
+
+    private static void howMuch() {
+    int cost = Integer.parseInt(IO.readln("Сколько стоит кофе? "));
+    int answer = 0 ;
+    if (cost > 300) answer = 1;
+    if (cost <= 300 && cost >= 150) answer =2;
+    if (cost < 150 && cost >= 80) answer = 3;
+    switch (answer) {  //
+            case 0: //
+                IO.println("А это в рублях? Это вообще кофе?");
+                break;
+            case 1:
+                IO.println("Дороговато");
+                break;
+            case 2:
+                IO.println("Норм");
+                break;
+            case 3: //
+                IO.println("Дешево");
+                break;
+        }
     }
 
     private static void task5() {
